@@ -140,6 +140,7 @@ class JavaScriptError(Exception):
 
 class fridaPointer:
     def __init__(self,connector, addr):
+        self.value = addr
         self.addr = f"ptr(0x{addr:x})"
         self.eval = connector.eval
    
